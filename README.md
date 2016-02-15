@@ -1,2 +1,2 @@
-# RPiTelegramSurveillance
-Camera surveillance using Tg on RPi
+# Raspberry Pi room monitoring system
+work in progress :)
