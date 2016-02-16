@@ -1,4 +1,4 @@
-function on_msg_receive (msg)
+function on_msg_receive(msg)
       if msg.out then
             return
       end
@@ -9,23 +9,23 @@ function on_msg_receive (msg)
             os.execute('rm -f /home/pi/camera/photo.jpg')
             os.execute('/home/pi/webcam/camera.sh')
             send_photo (msg.from.print_name, '/home/pi/camera/photo.jpg', ok_cb, false)
-  end
+      end
 end
 
-function on_our_id (id) 
+function on_our_id(id) 
 end   
 
-function on_secret_chat_created (peer) 
+function on_secret_chat_created(peer) 
 end   
 
-function on_user_update (user) 
+function on_user_update(user) 
 end   
 
-function on_chat_update (user) 
+function on_chat_update(user) 
 end   
 
-function on_get_difference_end () 
+function on_get_difference_end() 
 end   
 
-function on_binlog_replay_end () 
+function on_binlog_replay_end() 
 end
