@@ -1,15 +1,17 @@
 function on_msg_receive (msg)
       if msg.out then
-          return
+            return
       end
       if (msg.text=='ping') then
-         send_msg (msg.from.print_name, 'pong', ok_cb, false)
+            send_msg (msg.from.print_name, 'pong', ok_cb, false)
       end
-     if (msg.text=='scatto') then
-     os.execute('/home/pi/webcam/camera.sh')
-     send_photo (msg.from.print_name, '/home/pi/camera/photo.jpg', ok_cb, false)
+      if (msg.text=='scatto') then
+            os.execute('rm -f /home/pi/camera/photo.jpg')
+            os.execute('/home/pi/webcam/camera.sh')
+            send_photo (msg.from.print_name, '/home/pi/camera/photo.jpg', ok_cb, false)
   end
-end   
+end
+
 function on_our_id (id) 
 end   
 
