@@ -17,8 +17,11 @@ Set sudo permissions using
 
 Run the script `action.lua` by using the following commands
 
-```cd /home/pi/tg
-bin/telegram-cli -k tg-server.pub -W -s action.lua```
+`cd /home/pi/tg`
+
+and then
+
+`bin/telegram-cli -k tg-server.pub -W -s action.lua`
 
 ##Issues known
 
